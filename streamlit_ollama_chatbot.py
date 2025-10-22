@@ -263,6 +263,21 @@ st.markdown("""
         font-size: 1.1rem;
         line-height: 1.6;
     }
+    
+    /* Tagline styling */
+    .tagline {
+        text-align: center;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 1rem 0;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        letter-spacing: 1px;
+        background: linear-gradient(135deg, #fff 0%, #f0f0f0 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
     </style>
     """, unsafe_allow_html=True)
 
@@ -283,6 +298,7 @@ if "llm" not in st.session_state:
 
 # Header
 st.markdown("<h1>🤖 Chipade AI Assistant</h1>", unsafe_allow_html=True)
+st.markdown("<p class='tagline'>Democratize People by AI</p>", unsafe_allow_html=True)
 st.markdown("<p class='subtitle'>✨ Powered by Ollama (Llama3.2:3b) - Your Intelligent Conversation Partner</p>", unsafe_allow_html=True)
 
 # Sidebar for settings and info

@@ -15,7 +15,7 @@ load_dotenv()
 
 # Page configuration
 st.set_page_config(
-    page_title="Chipade AI Assistant",
+    page_title="Chipade AI Assistant | Democratize People by AI",
     page_icon="🤖",
     layout="wide"
 )
@@ -178,6 +178,11 @@ with st.sidebar:
 
 # Main chat interface
 st.title("💬 Chat with Chipade")
+st.markdown(
+    "<h2 style='text-align: center; color: #667eea; font-weight: 600; margin: 1rem 0; "
+    "text-shadow: 0 2px 4px rgba(0,0,0,0.1);'>Democratize People by AI</h2>",
+    unsafe_allow_html=True
+)
 st.markdown("Ask me anything! I'm here to help with technology, education, creative writing, and more.")
 
 # Display chat history
