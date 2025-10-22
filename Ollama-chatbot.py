@@ -6,7 +6,7 @@ from datetime import datetime
 
 # Initialize LLM
 
-llm = ChatOllama(model="llama3:8b", temperature=0.7,
+llm = ChatOllama(model="llama3.2:3b", temperature=0.7,
                  verbose=False, num_thread=10)
 
 # Initialize conversation with system message (ONCE, outside loop)
